@@ -15,8 +15,6 @@ if (env === 'development') {
   config = require(__dirname + '/../config/production.json')[env];
 }
 
-
-// production
 const db = {};
 
 let sequelize;
