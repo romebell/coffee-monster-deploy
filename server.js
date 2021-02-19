@@ -50,6 +50,10 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/coffee', (req, res) => {
+  res.render('coffee');
+});
+
 app.get('/profile', isLoggedIn, (req, res) => {
   const { id, name, email } = req.user.get(); 
   res.render('profile', { id, name, email });
